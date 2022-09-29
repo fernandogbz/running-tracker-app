@@ -1,0 +1,15 @@
+html {
+  font-family: 'MuseoModerno', cursive;
+  font-size: 10px;
+  background: #2d3740;
+}
+
+body {
+  padding: 1rem;
+  background: #1c262f;
+  color: rgb(230, 225, 225);
+  width: 90%;
+  margin: 0 auto;
+}
+
+
