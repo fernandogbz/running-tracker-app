@@ -1,7 +1,11 @@
+//10- Creating new variable goal
+const goal = 25;
+
 //3- Storing all of the user values inside of an array
 let entries = [];
 //5- This constant is for pushing the new entries at the end of the ul
 const entriesWrapper = document.querySelector("#entries");
+document.querySelector("#target").innerText = goal;
 
 //4- Pushing the array items onto the end of the ul
 function addNewEntry(newEntry) {
@@ -23,7 +27,7 @@ function reducer(total, currentValue) {
   return total + currentValue;
 }
 
-//7- This function grabs all of the entries, use a reduce method and then update the value next to "Total" and at the end in "Weekly target"
+//7- Grabs all of the entries, use a reduce method and then update the value next to "Total" and at the end in "Weekly target"
 function calcTotal() {
   const totalValue = entries.reduce(reducer).toFixed(1);
   document.getElementById("total").innerText = totalValue;
@@ -35,6 +39,11 @@ function calcAverage() {
   document.getElementById("average").innerText = average;
 }
 
+//9- Calculates the weekly high with javascript function math.max(the "..." extract all of the values inside of the array and takes the highest) 
+function weeklyHigh() {
+  const high = Math.max(...entries);
+  document.getElementById("high").innerText = high;
+}
 
 //2- Capturing the user's input, converting the string type value of the input into a number
 function handleSubmit(event) {
@@ -46,6 +55,7 @@ function handleSubmit(event) {
   addNewEntry(entry);
   calcTotal();
   calcAverage();
+  weeklyHigh();
 }
 //line 23: preventDefault will prevent the default behavior of the form submission which is to reload the browser
 //line 26: Grabbing the form and calling the reset method, which is going to clear all of the form inputs
