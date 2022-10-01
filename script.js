@@ -45,6 +45,14 @@ function weeklyHigh() {
   document.getElementById("high").innerText = high;
 }
 
+function calcGoal() {
+  const totalValue = entries.reduce(reducer).toFixed(1);
+  const completedPercent = totalValue / (goal / 100);
+  const progressCircle = document.querySelector("#progressCircle");
+  if(completedPercent > 100) completedPercent === 100;
+  progressCircle.style.background = `conic-gradient(#70db70 ${completedPercent}%, #2d3740 ${completedPercent}% 100%)`;
+}
+
 //2- Capturing the user's input, converting the string type value of the input into a number
 function handleSubmit(event) {
   event.preventDefault();
@@ -56,6 +64,7 @@ function handleSubmit(event) {
   calcTotal();
   calcAverage();
   weeklyHigh();
+  calcGoal();
 }
 //line 23: preventDefault will prevent the default behavior of the form submission which is to reload the browser
 //line 26: Grabbing the form and calling the reset method, which is going to clear all of the form inputs

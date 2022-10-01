@@ -16,13 +16,7 @@
 	<body>
 		<div class="logo">
 			<!-- This is the image of the guy running -->
-			<svg
-				width="383"
-				height="367"
-				viewBox="0 0 383 367"
-				fill="none"
-				xmlns="http://www.w3.org/2000/svg"
-			>
+			<svg viewBox="0 0 383 367" fill="none" xmlns="http://www.w3.org/2000/svg">
 				<!-- This path below is for the head of the image -->
 				<path
 					d="M288.603 64.462C306.387 64.462 320.81 49.991 320.81 32.207C320.81 14.423 306.388 0 288.603 0C270.77 0 256.348 14.422 256.348 32.207C256.348 49.991 270.77 64.462 288.603 64.462Z"
@@ -36,7 +30,7 @@
 			</svg>
 		</div>
 		<form>
-			<label for="entry">Number of miles today</label>
+			<label for="entry">Number of kms today</label>
 			<br />
 			<input type="number" id="entry" step="0.1" />
 			<br />
@@ -72,8 +66,12 @@
 		</section>
 
 		<section class="progress">
-			<h3>Weekly target: <span id="progressTotal"></span> / <span id="target"></span>miles</h3>
-			<div class="progressCircleWrapper"></div>
+			<h3>Weekly target: <span id="progressTotal"></span> / <span id="target"></span>kms</h3>
+			<div class="progressCircleWrapper">
+				<div id="progressCircle">
+					<div id="progressCenter"></div>
+				</div>
+			</div>
 		</section>
 		<script src="script.js"></script>
 	</body>
