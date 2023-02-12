@@ -12,8 +12,51 @@ body {
   margin: 0 auto;
 }
 
+.header {
+  position: absolute;
+  top: 0;
+  right: 5rem;
+}
+
+#linkedin {
+  text-decoration: none;
+}
+
+.profile-btn {
+  width: 180px;
+  height: 15px;
+  padding: 0;
+  border: 0;
+  margin-top: 20px;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  padding-left: 12px;
+  border-left: 2px solid #ddd;
+  border-radius: 0;
+}
+
+.profile-btn img {
+  width: 32px;
+  height: 32px;
+  -o-object-fit: cover;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-right: 4px;
+}
+
+.profile-btn span {
+  width: 170px;
+  color: black;
+  font-size: 15px;
+  line-height: 24px;
+  font-weight: 700;
+  margin-left: 2px;
+}
+
 .logo {
   text-align: center;
+  margin-top: 50px;
 }
 
 form {
@@ -35,7 +78,7 @@ input [type="number"] {
   text-align: center;
 }
 
-button {
+.add-btn {
   font-family: inherit;
   font-size: 1.4rem;
   font-weight: bolder;
@@ -113,6 +156,24 @@ li {
   height: 220px;
   border-radius: 50%;
   background: #1c262f;
+}
+
+.footer, .footer a {
+  font-size: 15px;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+}
+
+.footer a img {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 30px;
+}
+
+.footer a img{
+  -webkit-filter: invert(1);
+  filter: invert(1);
 }
 
 @media screen and (min-width:800px) {
