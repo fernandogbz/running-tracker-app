@@ -12,4 +12,6 @@ Running tracker app project
 <br>
 Link: https://fernandogbz.github.io/running-tracker-app/
 <br>
-![running-tracker-app](https://user-images.githubusercontent.com/112293116/202095244-d6e194b3-515c-4cdd-9b1f-cdbe09aff50a.png)
+<br>
+![running-tracker-app](https://user-images.githubusercontent.com/112293116/218339407-1439c947-9212-435a-a0cd-641614d0f703.png)
+
